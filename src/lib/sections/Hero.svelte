@@ -13,7 +13,7 @@
   <Stack align="center" gap={12} wrap>
     <a class="primary" target="_blank" href="https://disk.yandex.ru/d/rF1hIvXO-cEzAA/">
       <img src="/assets/download.svg" width="20px" height="20px" alt="Скачать: " />
-      Презентация<wbr />для инвесторов
+      Презентация для инвесторов
     </a>
     <a class="transparent" target="_blank" href="mailto:ipleshakov4@gmail.com">Связаться <Chevron direction="right" size={20} /></a>
   </Stack>
