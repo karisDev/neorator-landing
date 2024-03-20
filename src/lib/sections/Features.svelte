@@ -1,6 +1,7 @@
 <script>
   import FeaturesBg from "../components/FeaturesBg.svelte";
   import SectionTitle from "../components/SectionTitle.svelte";
+  import { FEATURES } from "../constants/features";
 
 </script>
 <section>
@@ -17,51 +18,15 @@
   </div>
   <div class="card right big">
     <img src="/assets/timer.svg" alt="ИИ" />
-    <p>Обработка аудио до 90 минут</p>
+    <p>Обработка аудио длительностью до 90 минут</p>
   </div>
   <ul>
-    <li class="card">
-      <img src="/assets/check_ok.svg" alt="Включено" />
-      <p>Слова паразиты</p>
-    </li>
-    <li class="card">
-      <img src="/assets/check_ok.svg" alt="Включено" />
-      <p>Язык речи</p>
-    </li>
-    <li class="card">
-      <img src="/assets/check_ok.svg" alt="Включено" />
-      <p>Слова заполнители</p>
-      <span>(ааа, ммм...)</span>
-    </li>
-    <li class="card">
-      <img src="/assets/check_ok.svg" alt="Включено" />
-      <p>Паузы</p>
-      <span>(активность голоса)</span>
-    </li>
-    <li class="card">
-      <img src="/assets/check_ok.svg" alt="Включено" />
-      <p>Эмоциональный анализ</p>
-    </li>
-    <li class="card">
-      <img src="/assets/check_ok.svg" alt="Включено" />
-      <p>Тематика речи</p>
-    </li>
-    <li class="card">
-      <img src="/assets/check_ok.svg" alt="Включено" />
-      <p>Грубые слова</p>
-    </li>
-    <li class="card">
-      <img src="/assets/check_ok.svg" alt="Включено" />
-      <p>Перевод аудио в текст</p>
-    </li>
-    <li class="card">
-      <img src="/assets/check_ok.svg" alt="Включено" />
-      <p>Скорость и громкость голоса</p>
-    </li>
-    <li class="card">
-      <img src="/assets/check_ok.svg" alt="Включено" />
-      <p>Анализ взаимодействия с аудиторией</p>
-    </li>
+    {#each FEATURES as feature}
+      <li class="card">
+        <img src="/assets/check_ok.svg" alt="Включено" />
+        <p>{feature}</p>
+      </li>
+    {/each}
   </ul>
 </section>
 

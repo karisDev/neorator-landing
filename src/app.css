@@ -25,6 +25,7 @@ body {
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
+  max-width: 100dvw;
 }
 
 h1 {
