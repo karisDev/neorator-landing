@@ -19,6 +19,7 @@
 <style>
   .section {
     max-width: var(--content-width);
+    overflow: hidden;
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
