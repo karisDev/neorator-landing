@@ -18,7 +18,7 @@
   </div>
   <div class="card right big">
     <img src="/assets/timer.svg" alt="ИИ" />
-    <p>Обработка аудио длительностью до 90 минут</p>
+    <p>Обработка аудио длиной до 90 минут</p>
   </div>
   <ul>
     {#each FEATURES as feature}
